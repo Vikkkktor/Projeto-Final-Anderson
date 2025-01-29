@@ -21,4 +21,6 @@ public abstract class Pessoa {
     public String getEndereco() {
         return endereco;
 }
-    public void setEndereco() 
+    public void setEndereco(String endereco) {
+        
+
