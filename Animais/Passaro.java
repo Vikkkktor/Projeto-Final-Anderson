@@ -8,10 +8,11 @@ public class Passaro extends Animal {
     public Boolean podeVoar;
     public Boolean podeFalar;
 
-    public Passaro(String nome, String raca, int idade, String porte, String cor, Boolean eDomestico, Boolean podeVoar) {
+    public Passaro(String nome, String raca, int idade, String porte, String cor, Boolean eDomestico, Boolean podeVoar, Boolean podeFalar) {
         super(nome, raca, idade, porte, cor);
         this.eDomestico = eDomestico;
         this.podeVoar = podeVoar;
+        this.podeFalar = podeFalar;
     }
 
 
