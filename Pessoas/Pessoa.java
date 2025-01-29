@@ -14,4 +14,11 @@ public abstract class Pessoa {
         this.telefone = telefone;
         this.cpf = cpf;
     }
+    // Gets e Sets
+    public String getNome() {
+        return nome;
 }
+    public String getEndereco() {
+        return endereco;
+}
+    public void setEndereco() 
