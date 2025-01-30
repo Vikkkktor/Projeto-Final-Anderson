@@ -14,6 +14,36 @@ public abstract class Animal {
         this.porte = porte;
         this.cor = cor;
     }
-
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getRaca() {
+        return raca;
+    }
+    public void setRaca(String raca) {
+        this.raca = raca;
+    }
+    public Int getIdade() {
+        return idade;
+    }
+    public void setIdade(Int idade) {
+        this.idade = idade;
+    }
+    public String getPorte() {
+        return porte;
+    }
+    public void setPorte(String porte) {
+        this.porte = porte;
+    }
+    public String getCor() {
+        return cor;
+    }
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+    
     public abstract void EmitirSons();
 }
