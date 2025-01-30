@@ -20,3 +20,7 @@ O sistema apresentas as seguintes classes:
 - **Animais**: Cachorro, Gato e Pássaro, que herdam de uma classe base **Animal**.
 - **Pessoas**: Adotantes e Funcionários, que herdam de uma clase base **Pessoa**.
 - **Casa de Adoção**: Uma classe que gerencia a lista de animais disponíveis e adotantes.
+
+# 🎓 Finalidade Acadêmica
+
+Este projeto foi desenvolvido com a finalidade de aplicar nossos conhecimentos aprendidos na disciplina de Fundamentos de Orientação a Objetos (FOO). O objetivo principal é aplicar os conceitos teóricos de OO em um sistema prático e funcional.
