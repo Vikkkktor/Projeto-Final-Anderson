@@ -1,6 +1,5 @@
 package Animais;
 
-// Classe Abstrata Animal
 public abstract class Animal {
     public String nome;
     public String raca;
@@ -8,7 +7,6 @@ public abstract class Animal {
     public String porte;
     public String cor;
 
-    // Construtor da Classe Animal
     public Animal(String nome, String raca, int idade, String porte, String cor) {
         this.nome = nome;
         this.raca = raca;
@@ -16,7 +14,6 @@ public abstract class Animal {
         this.porte = porte;
         this.cor = cor;
     }
-    // Gets e Sets
     public String getNome() {
         return nome;
     }
