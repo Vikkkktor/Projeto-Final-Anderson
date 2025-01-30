@@ -26,4 +26,22 @@ public class Passaro extends Animal {
             System.out.println("PRU PRU");
         }
     }
+    public Boolean getEDomestico() {
+        return eDomestico;
+    }
+    public void setEDomestico(Boolean eDomestico) {
+        this.eDomestico = eDomestico;
+    }
+    public Boolean getPodeVoar() {
+        return podeVoar;
+    }
+    public void setPodeVoar(Boolean podeVoar) {
+        this.podeVoar = podeVoar;
+    }
+    public Boolean getPodeFalar() {
+        return podeFalar;
+    }
+    public void setPodeFalar(Boolean podeFalar) {
+        this.podeFalar = podeFalar;
+    }
 }
