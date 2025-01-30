@@ -12,4 +12,10 @@ public class Cachorro extends Animal {
     public void EmitirSons(){
         System.out.println("AuAuAuAu");
     }
+    public Boolean getETreinado() {
+        return eTreinado;
+    }
+    public void setETreinado(Boolean eTreinado) {
+        this.eTreinado = eTreinado;
+    }
 }
