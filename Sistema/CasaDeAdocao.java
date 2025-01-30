@@ -27,4 +27,4 @@ public class CasaDeAdocao {
   public void setAdotantes(List<Adotante> adotantes) {
     this.adotantes = adotantes;
   }
-
+}
