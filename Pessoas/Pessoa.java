@@ -1,6 +1,5 @@
 package Pessoas;
 
-// Classe Pessoa da Casa de Adoção
 public abstract class Pessoa {
     public String nome;
     private String endereco;
@@ -8,7 +7,6 @@ public abstract class Pessoa {
     private String telefone;
     private String cpf;
 
-    // Construtor da Classe Pessoa
     public Pessoa(String nome, String endereco, int idade, String telefone, String cpf) {
         this.nome = nome;
         this.endereco = endereco;
@@ -16,7 +14,6 @@ public abstract class Pessoa {
         this.telefone = telefone;
         this.cpf = cpf;
     }
-    // Gets e Sets
     public String getNome() {
         return nome;
     }
