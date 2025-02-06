@@ -1,21 +1,14 @@
 package Animais;
 
 public class Gato extends Animal {
-    public String tipoDePelo;
 
-    public Gato(String nome, String raca, int idade, String porte, String cor, String tipoDePelo) {
-        super(nome, raca, idade, porte, cor);
-        this.tipoDePelo = tipoDePelo;
+    public Gato(String nome, String especie, int idade, String cor) {
+        super(nome, especie, idade, cor);
     }
 
     @Override
     public void EmitirSons(){
         System.out.println("Miau Miau");
     }
-    public String getTipoDePelo() {
-        return tipoDePelo;
-    }
-    public void setTipoDePelo(String tipoDePelo) {
-        this.tipoDePelo = tipoDePelo;
-    }
+
 }
