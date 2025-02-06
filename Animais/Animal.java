@@ -2,16 +2,14 @@ package Animais;
 
 public abstract class Animal {
     public String nome;
-    public String raca;
+    public String especie;
     public int idade;
-    public String porte;
     public String cor;
 
-    public Animal(String nome, String raca, int idade, String porte, String cor) {
+    public Animal(String nome, String especie, int idade,  String cor) {
         this.nome = nome;
-        this.raca = raca;
+        this.especie = especie;
         this.idade = idade;
-        this.porte = porte;
         this.cor = cor;
     }
     public String getNome() {
@@ -20,10 +18,10 @@ public abstract class Animal {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getRaca() {
+    public String getEspecie() {
         return raca;
     }
-    public void setRaca(String raca) {
+    public void setEspecie(String raca) {
         this.raca = raca;
     }
     public Int getIdade() {
@@ -31,12 +29,6 @@ public abstract class Animal {
     }
     public void setIdade(Int idade) {
         this.idade = idade;
-    }
-    public String getPorte() {
-        return porte;
-    }
-    public void setPorte(String porte) {
-        this.porte = porte;
     }
     public String getCor() {
         return cor;
