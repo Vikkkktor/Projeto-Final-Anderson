@@ -6,6 +6,8 @@ Este projeto foi desenvolvido para a disciplina de Fundamentos de Orientação a
 
 - Otavio Marcondes Ramalho
 - Viktor Augusto Garbossi Costa
+- Kaio Katsuo
+- João Victor Souza da Silva
 
 # 🛠️ Tecnologias Utilizadas no Projeto
 
