@@ -17,7 +17,7 @@ Este projeto foi desenvolvido para a disciplina de Fundamentos de Orientação a
 
 # 📋 Descrição do Projeto
 
-O sistema apresentas as seguintes classes:
+O sistema apresenta as seguintes classes:
 
 - **Animais**: Cachorro, Gato e Pássaro, que herdam de uma classe base **Animal**.
 - **Pessoas**: Adotantes e Funcionários, que herdam de uma clase base **Pessoa**.
