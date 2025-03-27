@@ -13,7 +13,7 @@ Este projeto foi desenvolvido para a disciplina de Fundamentos de Orientação a
 
 - **Linguagem de Programação**: Java
 - **Paradigma**: Orientação a Objetos (OO)
-- **Ferramentas**: Git, GitHub, IDE (Eclipse)
+- **Ferramentas**: Git, GitHub, IDE (Eclipse e IntelliJ)
 
 # 📋 Descrição do Projeto
 
