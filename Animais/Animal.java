@@ -19,10 +19,10 @@ public abstract class Animal {
         this.nome = nome;
     }
     public String getEspecie() {
-        return raca;
+        return especie;
     }
-    public void setEspecie(String raca) {
-        this.raca = raca;
+    public void setEspecie(String especie) {
+        this.raca = especie;
     }
     public Int getIdade() {
         return idade;
