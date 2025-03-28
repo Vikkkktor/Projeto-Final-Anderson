@@ -6,6 +6,10 @@ import Pessoas.Adotante;
 import java.util.ArrayList;
 import java.util.List;
 
+public interface ProcessoAdocao {
+  void adicionarAnimal(Animal animal);
+  void registrarAdocao(Adotante adotante);
+
 public class CasaDeAdocao {
   private List<Animal> animaisDisponiveis;
   private List<Adotante> adotantes;
