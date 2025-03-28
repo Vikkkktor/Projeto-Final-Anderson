@@ -2,6 +2,7 @@ package Animais;
 
 public interface EmissorDeSom {
     void EmitirSons();
+}
 
 public abstract class Animal implements EmissorDeSom {
     public String nome;
