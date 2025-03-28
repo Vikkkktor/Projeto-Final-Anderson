@@ -30,7 +30,7 @@ public abstract class Pessoa {
         return idade;
     }
     public void setIdade(Int idade) {
-        this.idade = idade
+        this.idade = idade;
     }
     public String getTelefone() {
         return telefone;
