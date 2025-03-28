@@ -1,5 +1,10 @@
 package Pessoas;
 
+public interface FuncoesFuncionario {
+    void ResgatarAnimal();
+    void RegistrarAnimal();
+}
+
 public class Funcionario extends Pessoa{
 
     public Funcionario(String nome, String endereco, int idade, String telefone, String cpf) {
