@@ -5,7 +5,7 @@ public interface FuncoesFuncionario {
     void RegistrarAnimal();
 }
 
-public class Funcionario extends Pessoa{
+public class Funcionario extends Pessoa implements FuncoesFuncionario{
 
     public Funcionario(String nome, String endereco, int idade, String telefone, String cpf) {
         super(nome, endereco, idade, telefone, cpf);
