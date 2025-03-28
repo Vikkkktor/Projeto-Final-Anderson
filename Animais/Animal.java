@@ -1,6 +1,9 @@
 package Animais;
 
-public abstract class Animal {
+public interface EmissorDeSom {
+    void EmitirSons();
+
+public abstract class Animal implements EmissorDeSom {
     public String nome;
     public String especie;
     public int idade;
