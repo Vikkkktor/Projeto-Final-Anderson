@@ -10,6 +10,9 @@ Este projeto foi desenvolvido para a disciplina de Fundamentos de Orientação a
 - João Victor Souza da Silva
 - Felipe Luiz Borges de Lima
 
+# ⏱️ Registro de Atualizações
+- 28-03-2025 (Otavio): Adicionei Interface as classes Animal, Funcionario e CasaDeAdocao
+
 # 🛠️ Tecnologias Utilizadas no Projeto
 
 - **Linguagem de Programação**: Java
