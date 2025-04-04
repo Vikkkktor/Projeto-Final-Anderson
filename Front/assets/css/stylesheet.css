@@ -1,90 +1,116 @@
- .navbar{
-     margin: auto;
-     width: 70%;
-     display: flex;
-     padding: 12px 20px;
-     justify-content: space-between;
-     align-items: center;
-     align-self: stretch;
-     border-radius: 40px;
-     background: #FFF;
-     box-shadow: 0 16px 12px 0 rgba(0, 0, 0, 0.03);
- }
- .navbar a{
-     color: var(--Default-Black, #000);
-     font-family: Poppins;
-     font-size: 20px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: normal;
-     text-decoration: none;
- }
+.navbar {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0 16px 12px 0 rgba(0, 0, 0, 0.03);
+}
 
- .inicio{
+.navbar a {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.inicio {
     position: relative;
-     display: flex;
-     height: 767px;
-     padding: 0 312px;
-     flex-direction: column;
-     align-items: center;
-     align-self: stretch;
-     background: lightgray;;
-     /*background:  #F8F9FA; */
- }
+    overflow: visible;
+    display: flex;
+    height: 767px;
+    padding: 0 312px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    background: #F8F9FA;
+}
 
- .testes{
-    word-spacing:44px;
+.testes {
+    word-spacing: 44px;
     text-align: center;
- }
+}
 
-.testes a{
-color: var(--Default-Black, #000);
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;}
+.testes a {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
- .testes a:hover{
- color:#FD7E14;
- text-decoration: underline #FD7E14;
- }
+.testes a:hover {
+    color: #FD7E14;
+    text-decoration: underline #FD7E14;
+}
 
 .dados {
-  width: 70%;
-  position:absolute;
-  top: 6%;
-  padding: 10px;
-  color: #000;
-
-  color: #000;
-  font-family: Poppins;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
+    width: 70%;
+    position: absolute;
+    top: 6%;
+    padding: 10px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .catch {
+    z-index: 10;
     position: absolute;
-    top:30%;
-    left:190px;
-
-overflow: hidden;
-color: #000;
-leading-trim: both;
-text-edge: cap;
-text-overflow: ellipsis;
-white-space: nowrap;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: Poppins;
-font-size: 54px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    overflow: visible;
+    color: #000;
+    text-overflow: ellipsis;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
-.catch button{
-    height: 10px;
-    width: 10px;
+.catch h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 1.5;
+    color: #000;
+}
+
+.catch button {
+    background-color: #000000;
+    width: 130px;
+    border-radius: 12px;
+}
+
+.catch img {
+    position: absolute;
+    z-index: 10;
+    top: -120px;
+    left: 33%;
+    width: 204px;
+    height: 204px;
+}
+
+.bolinha {
+    top: 30%;
+    border-radius: 70px;
+    width: 537px;
+    height: 523px;
+    flex-shrink: 0;
+    object-fit: cover;
+    clip-path: polygon(24% 4%, 80% 8%, 93% 31%, 100% 80%, 80% 100%, 39% 96%, 6% 74%, 0 22%);
 }
