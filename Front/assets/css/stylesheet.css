@@ -11,20 +11,80 @@
      box-shadow: 0 16px 12px 0 rgba(0, 0, 0, 0.03);
  }
  .navbar a{
-     color: black;
+     color: var(--Default-Black, #000);
+     font-family: Poppins;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     text-decoration: none;
  }
 
  .inicio{
+    position: relative;
      display: flex;
      height: 767px;
      padding: 0 312px;
      flex-direction: column;
      align-items: center;
      align-self: stretch;
-     background:  #F8F9FA;
+     background: lightgray;;
+     /*background:  #F8F9FA; */
  }
 
- .tetes{
+ .testes{
     word-spacing:44px;
-
+    text-align: center;
  }
+
+.testes a{
+color: var(--Default-Black, #000);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;}
+
+ .testes a:hover{
+ color:#FD7E14;
+ text-decoration: underline #FD7E14;
+ }
+
+.dados {
+  width: 70%;
+  position:absolute;
+  top: 6%;
+  padding: 10px;
+  color: #000;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.catch {
+    position: absolute;
+    top:30%;
+    left:190px;
+
+overflow: hidden;
+color: #000;
+leading-trim: both;
+text-edge: cap;
+text-overflow: ellipsis;
+white-space: nowrap;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Poppins;
+font-size: 54px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.catch button{
+    height: 10px;
+    width: 10px;
+}
