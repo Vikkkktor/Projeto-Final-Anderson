@@ -8,7 +8,8 @@ create table Animal (
     Especie varchar(50) not null,
     Idade int not null,
     Cor varchar(10) not null,
-    Tipo enum ('Cachorro', 'Gato', 'Pássaro')
+    Adotado boolean default false,
+    Tipo enum ('Cachorro', 'Gato', 'Pássaro') not null
 );
 
 create table Pessoa (
@@ -17,7 +18,6 @@ create table Pessoa (
     Endereco varchar(70),
     Idade int not null,
     Telefone varchar(16) not null,
-	CPF varchar(14) not null,
-    Funcao enum ('Adotante', 'Funcionário')
+	CPF varchar(14) not null unique,
+    Funcao enum ('Adotante', 'Funcionário') not null
 );
-
