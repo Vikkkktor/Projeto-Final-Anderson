@@ -9,7 +9,7 @@ create table Animal (
     Raca varchar(30) not null,
     Adotado boolean default false,
     Especie enum ('Cachorro', 'Gato', 'Pássaro') not null,
-    -- Atributos especificos por espécie
+    -- Atributos especificos para por espécie
     Pode_Voar boolean null comment 'Apenas para pássaros',
     Pode_Falar boolean null comment 'Apenas para pássaros',
     E_Treinado boolean null comment 'Apenas para cachorros'
