@@ -1,23 +1,20 @@
 package Pessoas;
 
-public class Adotante extends Pessoa{
-    private String carteiraDeAdotante;
+public class Adotante extends Pessoa {
+    private String carteiraAdotante;
 
-
-    public Adotante(String nome, String endereco, int idade, String telefone, String cpf, String carteiraDeAdotante) {
+    // Construtores
+    public Adotante(String nome, String endereco, int idade, String telefone, String cpf, String carteiraAdotante) {
         super(nome, endereco, idade, telefone, cpf);
-        this.carteiraDeAdotante = carteiraDeAdotante;
+        this.carteiraAdotante = carteiraAdotante;
     }
 
-    public void AdotarAnimal(){
-        System.out.println("Adotando animal...");
+    // Getters and setters
+    public String getCarteiraAdotante() {
+        return carteiraAdotante;
     }
 
-    public String getCarteiraDeAdotante() {
-        return carteiraDeAdotante;
-    }
-
-    public void setCarteiraDeAdotante(String carteiraDeAdotante) {
-        this.carteiraDeAdotante = carteiraDeAdotante;
+    public void setCarteiraAdotante(String carteiraAdotante) {
+        this.carteiraAdotante = carteiraAdotante;
     }
 }
