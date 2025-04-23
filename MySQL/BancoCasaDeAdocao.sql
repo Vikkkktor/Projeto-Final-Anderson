@@ -4,27 +4,50 @@ use CasaDeAdocao;
 
 create table Animal (
 	ID_Animal int not null auto_increment Primary Key,
-    Nome varchar(50) not null,
-    Idade int not null,
-    Raca varchar(30) not null,
-    Adotado boolean default false,
-    Especie enum ('Cachorro', 'Gato', 'Pássaro') not null,
-    -- Atributos especificos para por espécie
-    Pode_Voar boolean null comment 'Apenas para pássaros',
-    Pode_Falar boolean null comment 'Apenas para pássaros',
-    E_Treinado boolean null comment 'Apenas para cachorros'
+    	Nome varchar(50) not null,
+    	Idade int not null,
+   	Raca varchar(30) not null,
+    	Adotado boolean default false,
 );
 
+create table Cachorro (
+	ID_Cachorro int Primary Key,
+	E_Treinado Boolean,
+	Foreign Key (ID_Cachorro) references Animal(ID_Animal)
+);
+
+create table Passaro (
+	ID_Passaro int Primary Key,
+	Pode_Voar boolean,
+	Pode_Falar boolean,
+	Foreign Key (ID_Passaro) references Animal(ID_Animal)
+);
+
+create table Gato (
+	ID_Gato int Primary Key,
+	Foreign Key (ID_Gato) references Animal(ID_Animal)
+);
+	
 create table Pessoa (
 	ID_Pessoa int not null auto_increment Primary Key,
-    Nome varchar(50) not null,
-    Endereco varchar(70),
-    Idade int not null,
-    Telefone varchar(16) not null,
-	CPF varchar(14) not null unique,
-    Funcao enum ('Adotante', 'Funcionário') not null,
-    Carteira_Adotante varchar(20) null comment 'Apenas para Adotante'
+    	Nome varchar(50) not null,
+    	Endereco varchar(70),
+    	Idade int not null,
+   	Telefone varchar(16) not null,
+	CPF varchar(14) unique,
 );	
+
+create table Adotante (
+	ID_Adotante int Primary Key,
+	Carteira_Adotante varchar(20),
+	Foreign Key (ID_Adotante) references Pessoa(ID_Pessoa)
+);
+
+create table Funcionario (
+	ID_Funcionario int Primary Key,
+	Matricula varchar(20),
+	Foreign Key (ID_Funcionario) references Pessoa(ID_Pessoa)
+);
 
 create table Adocao (
 	ID_Adocao int not null auto_increment Primary Key,
