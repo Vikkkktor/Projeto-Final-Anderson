@@ -1,12 +1,24 @@
-import java.time.LocalDate;
+package Sistema;
+
+import Animais.Animal;
+import Pessoas.Adotante;
+
+import java.util.Date;
 
 public class Adocao {
     private int idAdocao;
-    private int idAnimal;
-    private int idPessoa;
-    private LocalDate dataAdocao;
+    private Animal animal;
+    private Adotante adotante;
+    private Date dataAdocao;
 
-    // Getters e Setters
+    // Construtores
+    public Adocao(Animal animal, Adotante adotante, Date dataAdocao) {
+        this.animal = animal;
+        this.adotante = adotante;
+        this.dataAdocao = dataAdocao;
+    }
+
+    // Getters and setters
     public int getIdAdocao() {
         return idAdocao;
     }
@@ -15,27 +27,27 @@ public class Adocao {
         this.idAdocao = idAdocao;
     }
 
-    public int getIdAnimal() {
-        return idAnimal;
+    public Animal getAnimal() {
+        return animal;
     }
 
-    public void setIdAnimal(int idAnimal) {
-        this.idAnimal = idAnimal;
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
     }
 
-    public int getIdPessoa() {
-        return idPessoa;
+    public Adotante getAdotante() {
+        return adotante;
     }
 
-    public void setIdPessoa(int idPessoa) {
-        this.idPessoa = idPessoa;
+    public void setAdotante(Adotante adotante) {
+        this.adotante = adotante;
     }
 
-    public LocalDate getDataAdocao() {
+    public Date getDataAdocao() {
         return dataAdocao;
     }
 
-    public void setDataAdocao(LocalDate dataAdocao) {
+    public void setDataAdocao(Date dataAdocao) {
         this.dataAdocao = dataAdocao;
     }
 }
