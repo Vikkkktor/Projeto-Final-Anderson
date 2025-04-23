@@ -6,11 +6,16 @@ public class Animal {
     private int idade;
     private String raca;
     private boolean adotado;
-    private Especie especie;
-    private Boolean podeVoar;   // Apenas para pássaros
-    private Boolean podeFalar;  // Apenas para pássaros
-    private Boolean eTreinado;  // Apenas para cachorros
 
+    // Construtores
+    public Animal(String nome, int idade, String raca) {
+        this.nome = nome;
+        this.idade = idade;
+        this.raca = raca;
+        this.adotado = false;
+    }
+
+    // Getters and setters
     public int getIdAnimal() {
         return idAnimal;
     }
@@ -49,37 +54,5 @@ public class Animal {
 
     public void setAdotado(boolean adotado) {
         this.adotado = adotado;
-    }
-
-    public Especie getEspecie() {
-        return especie;
-    }
-
-    public void setEspecie(Especie especie) {
-        this.especie = especie;
-    }
-
-    public Boolean getPodeVoar() {
-        return podeVoar;
-    }
-
-    public void setPodeVoar(Boolean podeVoar) {
-        this.podeVoar = podeVoar;
-    }
-
-    public Boolean getPodeFalar() {
-        return podeFalar;
-    }
-
-    public void setPodeFalar(Boolean podeFalar) {
-        this.podeFalar = podeFalar;
-    }
-
-    public Boolean getETreinado() {
-        return eTreinado;
-    }
-
-    public void setETreinado(Boolean eTreinado) {
-        this.eTreinado = eTreinado;
     }
 }
