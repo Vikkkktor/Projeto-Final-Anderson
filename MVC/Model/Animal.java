@@ -1,45 +1,85 @@
 package Animais;
 
-public interface EmissorDeSom {
-    void EmitirSons();
-}
+public class Animal {
+    private int idAnimal;
+    private String nome;
+    private int idade;
+    private String raca;
+    private boolean adotado;
+    private Especie especie;
+    private Boolean podeVoar;   // Apenas para pássaros
+    private Boolean podeFalar;  // Apenas para pássaros
+    private Boolean eTreinado;  // Apenas para cachorros
 
-public abstract class Animal implements EmissorDeSom {
-    public String nome;
-    public String especie;
-    public int idade;
-    public String cor;
-
-    public Animal(String nome, String especie, int idade,  String cor) {
-        this.nome = nome;
-        this.especie = especie;
-        this.idade = idade;
-        this.cor = cor;
+    public int getIdAnimal() {
+        return idAnimal;
     }
+
+    public void setIdAnimal(int idAnimal) {
+        this.idAnimal = idAnimal;
+    }
+
     public String getNome() {
         return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getEspecie() {
-        return especie;
-    }
-    public void setEspecie(String especie) {
-        this.raca = especie;
-    }
-    public Int getIdade() {
+
+    public int getIdade() {
         return idade;
     }
+
     public void setIdade(int idade) {
         this.idade = idade;
     }
-    public String getCor() {
-        return cor;
+
+    public String getRaca() {
+        return raca;
     }
-    public void setCor(String cor) {
-        this.cor = cor;
+
+    public void setRaca(String raca) {
+        this.raca = raca;
     }
-    
-    public abstract void EmitirSons();
+
+    public boolean isAdotado() {
+        return adotado;
+    }
+
+    public void setAdotado(boolean adotado) {
+        this.adotado = adotado;
+    }
+
+    public Especie getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(Especie especie) {
+        this.especie = especie;
+    }
+
+    public Boolean getPodeVoar() {
+        return podeVoar;
+    }
+
+    public void setPodeVoar(Boolean podeVoar) {
+        this.podeVoar = podeVoar;
+    }
+
+    public Boolean getPodeFalar() {
+        return podeFalar;
+    }
+
+    public void setPodeFalar(Boolean podeFalar) {
+        this.podeFalar = podeFalar;
+    }
+
+    public Boolean getETreinado() {
+        return eTreinado;
+    }
+
+    public void setETreinado(Boolean eTreinado) {
+        this.eTreinado = eTreinado;
+    }
 }
