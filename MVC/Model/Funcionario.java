@@ -1,23 +1,20 @@
 package Pessoas;
 
-public interface FuncoesFuncionario {
-    void ResgatarAnimal();
-    void RegistrarAnimal();
-}
+public class Funcionario extends Pessoa {
+    private String matricula;
 
-public class Funcionario extends Pessoa implements FuncoesFuncionario{
-
-    public Funcionario(String nome, String endereco, int idade, String telefone, String cpf) {
+    // Construtores
+    public Funcionario(String nome, String endereco, int idade, String telefone, String cpf, String matricula) {
         super(nome, endereco, idade, telefone, cpf);
+        this.matricula = matricula;
     }
 
-    public void ResgatarAnimal(){
-        System.out.println("Resgatando animal...");
+    // Getters and setters
+    public String getMatricula() {
+        return matricula;
     }
 
-    public void RegistrarAnimal(){
-        System.out.println("Registrando animal...");
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
-
-
 }
