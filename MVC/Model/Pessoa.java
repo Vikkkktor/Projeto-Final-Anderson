@@ -7,12 +7,17 @@ public class Pessoa {
     private int idade;
     private String telefone;
     private String cpf;
-    private Funcao funcao;
 
-    // Apenas para Adotantes
-    private String carteiraAdotante;
+    // Construtores
+    public Pessoa(String nome, String endereco, int idade, String telefone, String cpf) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.idade = idade;
+        this.telefone = telefone;
+        this.cpf = cpf;
+    }
 
-    // Getters e Setters
+    // Getters and setters
     public int getIdPessoa() {
         return idPessoa;
     }
@@ -59,21 +64,5 @@ public class Pessoa {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public Funcao getFuncao() {
-        return funcao;
-    }
-
-    public void setFuncao(Funcao funcao) {
-        this.funcao = funcao;
-    }
-
-    public String getCarteiraAdotante() {
-        return carteiraAdotante;
-    }
-
-    public void setCarteiraAdotante(String carteiraAdotante) {
-        this.carteiraAdotante = carteiraAdotante;
     }
 }
