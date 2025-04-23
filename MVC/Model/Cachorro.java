@@ -1,30 +1,20 @@
 package Animais;
 
 public class Cachorro extends Animal {
+    private boolean eTreinado;
 
-    public Boolean eTreinado;
-
-    public Cachorro(String nome, String especie, int idade, String cor, Boolean eTreinado) {
-        super(nome, especie, idade, cor);
+    // Construtores
+    public Cachorro(String nome, int idade, String raca, boolean eTreinado) {
+        super(nome, idade, raca);
         this.eTreinado = eTreinado;
     }
 
-    @Override
-    public void EmitirSons(){
-        System.out.println("AuAuAuAu");
-    }
-    public void FazerTruques(){
-        if(getETreinado()){
-            System.out.println("Fazendo truques...");
-        }else{
-            System.out.println("Esse Cachorro não é adestrado!");
-        }
-    }
-
-    public Boolean getETreinado() {
+    // Getters and setters
+    public boolean isETreinado() {
         return eTreinado;
     }
-    public void setETreinado(Boolean eTreinado) {
+
+    public void setETreinado(boolean eTreinado) {
         this.eTreinado = eTreinado;
     }
 }
