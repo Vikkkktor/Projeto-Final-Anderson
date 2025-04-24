@@ -12,6 +12,7 @@ create table Animal (
 
 create table Cachorro (
 	ID_Cachorro int Primary Key,
+	Descricao varchar(200),
 	E_Treinado Boolean,
 	Foreign Key (ID_Cachorro) references Animal(ID_Animal)
 );
