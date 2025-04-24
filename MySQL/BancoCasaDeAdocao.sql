@@ -5,6 +5,7 @@ use CasaDeAdocao;
 create table Animal (
 	ID_Animal int not null auto_increment Primary Key,
     	Nome varchar(50) not null,
+	Descricao varchar(200),
     	Idade int not null,
    	Raca varchar(30) not null,
     	Adotado boolean default false,
@@ -12,7 +13,6 @@ create table Animal (
 
 create table Cachorro (
 	ID_Cachorro int Primary Key,
-	Descricao varchar(200),
 	E_Treinado Boolean,
 	Foreign Key (ID_Cachorro) references Animal(ID_Animal)
 );
