@@ -249,3 +249,69 @@
     font-weight: 400;
     line-height: 20px;
 }
+
+.procurar-por-animais{
+    padding: 0 16% 0 16%;
+}
+
+.frase{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    margin-top: 70px;
+}
+
+.imagens {
+    position: relative;
+    margin-top: 30px;
+    width: 150px;
+    height: 144px;
+    flex-shrink: 0;
+    max-width: 100%;
+    display: flex;
+    gap: 200px;
+}
+
+.imagens-container{
+    position: relative;
+    width: 150px;
+    height: 144px;
+    flex-shrink: 0;
+
+}
+
+.imagens-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.imagem_original{
+    opacity: 1;
+}
+
+.replacement_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.imagens:hover .original_img {
+    opacity: 0;
+}
+
+.imagens:hover .replacement_img {
+    opacity: 1;
+}
