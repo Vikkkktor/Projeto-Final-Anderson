@@ -5,6 +5,7 @@ use CasaDeAdocao;
 create table Animal (
 	ID_Animal int not null auto_increment Primary Key,
     	Nome varchar(50) not null,
+	CaminhoImg varchar(255),
 	Descricao varchar(200),
     	Idade int not null,
    	Raca varchar(30) not null,
