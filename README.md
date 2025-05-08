@@ -13,8 +13,8 @@ Este projeto foi desenvolvido para a disciplina de Fundamentos de Orientação a
 # 🛠️ Tecnologias Utilizadas no Projeto
 
 - **Linguagem de Programação**: Java
-- **Paradigma**: Orientação a Objetos (OO), MVC, Banco de Dados
-- **Ferramentas**: Git, GitHub, IDE (Eclipse e IntelliJ)
+- **Paradigma**: Orientação a Objetos (OO), MVC e Banco de Dados
+- **Ferramentas**: Git, GitHub, IDE (Eclipse, IntelliJ, MySQL Workbench)
 
 # 📋 Descrição do Projeto
 
