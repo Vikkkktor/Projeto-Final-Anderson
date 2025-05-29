@@ -458,3 +458,61 @@
     font-weight: 500;
     line-height: normal;
 }
+
+.formulario-login{
+    display: flex;
+    width: 550px;
+    height: 387px;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 0 30%;
+}
+
+.formulario-login h2{
+    margin: -100px 0 10% 0;
+    color: black;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+.formulario-login label{
+    color: black;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+.formulario-login input{
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0 16px 12px 0 rgba(0, 0, 0, 0.03);
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+.botao-login{        
+    margin: 30px 0 0 0px;
+    display: grid;
+    width: 248px;
+    height: 40px;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-shrink: 0;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    border-radius: 8px;
+    background: #000;
+    color: white;
+}
