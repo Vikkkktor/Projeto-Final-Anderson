@@ -33,7 +33,11 @@ create table Gato (
 create table Pessoa (
     ID_Pessoa int not null auto_increment Primary Key,
     Nome varchar(50) not null,
-    Endereco varchar(70),
+    CEP varchar(9),
+    Cidade varchar(50),
+    Estado varchar(2),
+    Logradouro varchar(100),
+    Complemento varchar(50),
     date_nas DATE not null,
     Telefone varchar(16) not null,
     CPF varchar(14) unique
