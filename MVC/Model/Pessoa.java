@@ -3,8 +3,12 @@ package Pessoas;
 public class Pessoa {
     private int idPessoa;
     private String nome;
-    private String endereco;
+    private String cep;
+    private String estado;
+    private String logradouro;
+    private String complemento;
     private int idade;
+    private String senha;
     private String telefone;
     private String cpf;
 
