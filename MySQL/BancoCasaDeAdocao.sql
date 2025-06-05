@@ -33,6 +33,7 @@ create table Gato (
 create table Pessoa (
     ID_Pessoa int not null auto_increment Primary Key,
     Nome varchar(50) not null,
+    Email varchar(255) not null unique,
     CEP varchar(9) not null,
     Cidade varchar(50) not null,
     Estado varchar(2) not null,
@@ -41,7 +42,7 @@ create table Pessoa (
     date_nas DATE not null,
     Senha varchar(255) not null,
     Telefone varchar(16) not null,
-    CPF varchar(14) unique
+    CPF varchar(14) not null unique
 );    
 
 create table Adotante (
