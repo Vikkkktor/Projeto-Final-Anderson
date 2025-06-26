@@ -473,13 +473,13 @@
 }
 
 .formulario-login h2{
-    margin: -100px 0 10% 0;
-    color: black;
-    font-size: 24px;
+    margin: -20px 0 5% 0;
+    color: var(--Default-Black, #000);
     font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word
+    line-height: 20px; /* 83.333% */
 }
 
 .formulario-login label{
@@ -492,27 +492,86 @@
 }
 
 .formulario-login input{
-    border-radius: 3px;
-    background: #FFF;
-    box-shadow: 0 16px 12px 0 rgba(0, 0, 0, 0.03);
-    font-size: 16px;
+    flex: 1 0 0;
+    color: var(--Gray-600, #6C757D);
     font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 20px;
-    word-wrap: break-word
+    line-height: 20px; 
+
+    display: flex;
+    padding: 9px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: var(--Default-White, #FFF);
+    width: 438px;
+    height: 40px;
 }
 
-.botao-login{        
-    margin: 30px 0 0 0px;
-    display: grid;
-    width: 248px;
-    height: 40px;
-    row-gap: 10px;
-    column-gap: 10px;
-    flex-shrink: 0;
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    border-radius: 8px;
-    background: #000;
+
+.botao-entrar {
+    color: var(--Default-White, #FFF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center; 
+    background-color: black;
     color: white;
+    border: 1px solid black; 
+    padding: 8px 20px; 
+    width: 248px;
+    height: 40px; 
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.texto_criarconta {
+    display: flex;
+    margin-top: 20px;
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.texto_criarconta a {
+    color: #00F;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.formulario-cadastro{
+    display: flex;
+    width: 550px;
+    height: 700px;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 0 30%;
 }
