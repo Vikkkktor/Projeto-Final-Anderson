@@ -18,12 +18,24 @@
 <body>
     <div class="formulario-cadastro">
         <h2>CADASTRO</h2>
-        <form id="fomularioLogin">
+        <form id="fomularioCadastro">
+            <div class="label-nome-e-sobrenome">
+                <label for="Nome">Nome</label>
+                <label for="Sobrenome">Sobrenome</label> 
+            </div>
+            <div class="input-nome-e-sobrenome">
+                <input class="campo-nome" type="text" id="nome" name="nome" placeholder="Nome">
+                <input class="campo-sobrenome" type="text" id="Sobrenome" name="Sobrenome" placeholder="Sobrenome">
+            </div><br>
+
+            <label for="CPF">CPF</label><br>
+            <input type="text" id="CPF" name="CPF" placeholder="12345678910"><br>
+
             <label for="Email">Email</label><br>
-            <input type="text" id="Email" name="Email" placeholder="Email"><br>
+            <input type="email" id="Email" name="Email" placeholder="Email"><br>
 
             <label for="EmailConfirmado">Confirme seu email</label><br>
-            <input type="text" id="EmailConfirmado" name="EmailConfirmado" placeholder="Email"><br>
+            <input type="email" id="EmailConfirmado" name="EmailConfirmado" placeholder="Email"><br>
 
             <label for="Senha">Senha</label><br>
             <input type="password" id="Senha" name="Senha" placeholder="Senha"><br>
@@ -31,28 +43,57 @@
             <label for="SenhaConfirmada">Confirme sua senha</label><br>
             <input type="password" id="Senha" name="Senha" placeholder="Senha"><br>
 
-            <label for="Nome">Nome</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Nome"><br>
-
-            <label for="Sobrenome">Sobrenome</label><br>
-            <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Sobrenome"><br>
-
             <label for="DataNascimento">Data de Nascimento</label><br>
-            <input type="date" id="DataNascimento" name="DataNascimento" placeholder="01/10/2000"><br>
+            <input type="date" id="DataNascimento" name="DataNascimento"><br>
 
             <label for="Telefone">Telefone</label><br>
-            <input type="tel" id="telefone" name="telefone" placeholder="(43) 91234-1234"><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(43)912341234"><br>
 
             <label for="CEP">CEP</label><br>
-            <input type="text" id="CEP" name="CEP" placeholder="86706-328"><br>
+            <input type="text" id="CEP" name="CEP" placeholder="86706328"><br>
 
-            <label for="selecionar-estado">Estado</label><br>
-            <input type="" id="Email" name="Email" placeholder="Email"><br>
+            <label for="SelecionarEstado">Estado</label><br>
+            <select id="SelecionarEstado" name="SelecionarEstado">
+                <option value="">selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select><br>
 
-            <label for="Senha">Senha</label><br>
-            <input type="text" id="Senha" name="Senha" placeholder="Senha"><br>
+            <label for="Cidade">Cidade</label><br>
+            <input type="text" id="cidade" name="cidade" placeholder="cidade"><br>
+            
+            <label for="Logradouro">Logradouro</label><br>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Rua Cassio Ramos"><br>
+
+            <label for="Complemento">Complemento</label><br>
+            <input type="text" id="complemento" name="complemento" placeholder="ap 806"><br>
         </form>
-            <button class="botao-entrar">Entrar</button>
+            <a href="login.html" style="text-decoration: none;"><button class="botao-entrar">Cadastrar</button></a>
     </div>
 </body>
 </html>
