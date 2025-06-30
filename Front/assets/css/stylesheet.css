@@ -200,7 +200,11 @@
     object-fit: cover;
 }
 
-.animais-dados {
+.card-animal a{
+    text-decoration: none;
+}
+
+.animais-informacoes {
     background-color: white;
     color: black;
     padding: 10px;
@@ -472,17 +476,21 @@
     margin: 10% 0 0 30%;
 }
 
-.formulario-login h2{
+.formulario-login h2, .formulario-cadastro h2{
     margin: -20px 0 5% 0;
     color: var(--Default-Black, #000);
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; /* 83.333% */
+    line-height: 20px; 
 }
 
-.formulario-login label{
+.formulario-cadastro h2{
+    margin: 20px 0 5% 0;
+}
+
+.formulario-login, .formulario-cadastro label{
     color: black;
     font-size: 16px;
     font-family: Poppins;
@@ -491,9 +499,8 @@
     word-wrap: break-word
 }
 
-.formulario-login input{
+.formulario-login input, .formulario-cadastro input, .formulario-cadastro select{
     flex: 1 0 0;
-    color: var(--Gray-600, #6C757D);
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -506,13 +513,24 @@
     gap: 8px;
     align-self: stretch;
     border-radius: 6px;
+    border-width: 0;
     background: var(--Default-White, #FFF);
     width: 438px;
     height: 40px;
 }
 
+.label-nome-e-sobrenome{
+    gap: 190px;
+    display: flex;
+}
 
-.botao-entrar {
+.input-nome-e-sobrenome{
+    gap: 20px;
+    display: flex;
+    width: 190px;
+}
+
+.botao-entrar{
     color: var(--Default-White, #FFF);
     leading-trim: both;
     text-edge: cap;
@@ -536,7 +554,7 @@
     margin: 0 auto; 
 }
 
-.texto_criarconta {
+.texto-criar-conta {
     display: flex;
     margin-top: 20px;
     color: #000;
@@ -550,7 +568,7 @@
     line-height: normal;
 }
 
-.texto_criarconta a {
+.texto-criar-conta a {
     color: #00F;
     leading-trim: both;
     text-edge: cap;
@@ -559,19 +577,55 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
 }
-
-
 
 .formulario-cadastro{
     display: flex;
     width: 550px;
-    height: 700px;
+    height: 50%;
     flex-direction: column;
     flex-shrink: 0;
     border-radius: 20px;
     background: #F5F5F5;
     justify-content: center;
     align-items: center;
-    margin: 10% 0 0 30%;
+    margin: 0 0 0 30%;
+}
+
+.dados-animal{
+    display: flex;
+    padding: 20px 70px 0;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.dados-animal dd{
+    color: #D91616;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; 
+    margin: 0;
+}
+
+.dados-animal dt{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.80);
+    leading-trim: both;
+    text-edge: cap;
+    text-overflow: ellipsis;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
 }
