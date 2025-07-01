@@ -629,3 +629,67 @@
     font-weight: 400;
     line-height: 160%; 
 }
+
+.img-descricao-animal{
+    padding: 40px;
+    display: flex;
+}
+
+.img-animal{
+    width: 550px;
+    height: 556px;
+    flex-shrink: 0;
+    border-radius: 5%;
+}
+
+.troca-img{
+    margin-top: 20%;
+    width: 54px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.nome-descricao{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.nome-descricao h3{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; 
+}
+
+.castrado{
+    color: rgba(0, 0, 0, 0.60);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; 
+    width: 82;
+}
+
+.sobre-animal{
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.80);
+    leading-trim: both;
+    text-edge: cap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; 
+}
