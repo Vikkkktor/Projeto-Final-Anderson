@@ -693,3 +693,35 @@
     font-weight: 600;
     line-height: 160%; 
 }
+
+.fotos-espera{
+    display:flex;
+    padding: 60px 312px;
+}
+
+.foto-clicavel{
+    height: 250px;
+    width: 250px;
+    border-radius: 5%;
+    margin: 0 10px 0 10px;
+}
+
+.contato{
+    padding: 60px 312px;
+    margin-left: 200px;
+}
+
+.contato p{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; 
+}
+
+.contato img{
+    margin-left: 150px;
+}
