@@ -21,7 +21,7 @@
     </a>
     <div class="nav-links">
       <a href="adote.html">adote</a>
-      <a href="index.html">contate-nos</a>
+      <a  class="nav-links-nome-composto" href="adicionarAnimal.html">adicionar animal</a>
       <a href="login.html">login</a>
     </div>
   </nav>
@@ -80,109 +80,136 @@
 
 <div class="filtro">
   <p class="quantidade-filtro">Mostrando 12-12 de 14 resultados</p>
-  <button class="botao-filtro">a-z</button>
+  <select class="botao-filtro" id="ordenarPor" name="ordenarPor">
+  <option value="nome_asc">Nome (A-Z)</option>
+  <option value="nome_desc">Nome (Z-A)</option>
+  <option value="data_adicao_desc">Últimos Adicionados</option>
+  <option value="data_adicao_asc">Primeiros Adicionados</option>
+  <option value="porte_asc">Porte (P-G)</option>
+  <option value="idade_asc">Idade (Filhote-Sênior)</option>
+</select>
 </div>
 
 <main class="animais">
-  <div class="card-animal">
-      <img src="assets/images/animais/gata_preta.jpeg" alt="">
-      <div class="animais-informacoes">
-
-          <p class="nome">Luna</p>
-          <p class="descricao">Gata carinhosa e curiosa, adora cochilar ao sol.</p>
-      </div>
-  </div>
-
-  <div class="card-animal">
-      <img src="assets/images/animais/cachorro_thor.jpeg" alt=""> 
-      <div class="animais-informacoes">
-          <p class="nome">Thor</p>
-          <p class="descricao">Cachorro energético e leal, ama brincadeiras.</p>
-      </div>
-    
-  </div>
-
-  <div class="card-animal">
-      <img src="assets/images/animais/gata_mika.jpg" alt="">
-      <div class="animais-informacoes">
-          <p class="nome">Mika</p>
-          <p class="descricao">Gata dócil e observadora, sempre em busca de carinho.</p>
-      </div>
-  </div>
-
-  <div class="card-animal">
-      <img src="assets/images/animais/frederico.jpeg" alt="">
-      <div class="animais-informacoes">
-          <p class="nome">Frederico</p>
-          <p class="descricao">Cão pequeno e brincalhão, ama correr ao ar livre.</p>
-      </div>
-  </div>
-
-  <div class="card-animal">
-      <img src="assets/images/animais/pipoca.jpg" alt="">
-      <div class="animais-informacoes">
-
-          <p class="nome">Pipoca</p>
-          <p class="descricao">Pássaro alegre que canta todas as manhãs.</p>
-      </div>
-  </div>
-
-  <div class="card-animal">
-      <img src="assets/images/animais/gata_nina.jpg" alt="">
-      <div class="animais-informacoes">
-          <p class="nome">Nina</p>
-          <p class="descricao">Gatinha brincalhona que ama perseguir bolinhas.</p>
-      </div>
-  </div>
-
-  <div class="card-animal">
-      <img src="assets/images/animais/bolt.jpg" alt="">
-      <div class="animais-informacoes">
-          <p class="nome">Bolt</p>
-          <p class="descricao">Cachorro veloz e esperto, cheio de energia.</p>
-      </div>
-  </div>
-
-  <div class="card-animal">
-      <img src="assets/images/animais/tico.jpg" alt="">
-      <div class="animais-informacoes">
-          <p class="nome">Tico</p>
-          <p class="descricao">Pássaro sociável que adora interagir com humanos.</p>
-      </div>
-  </div>
-
-  <div class="card-animal">
-    <img src="assets/images/animais/gata_preta.jpeg" alt="">
-    <div class="animais-informacoes">
-
-        <p class="nome">Luna</p>
-        <p class="descricao">Gata carinhosa e curiosa, adora cochilar ao sol.</p>
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/gata_preta.jpeg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Luna</p>
+                <p class="descricao">Gata carinhosa e curiosa, adora cochilar ao sol.</p>
+            </div>
+        </a>
     </div>
-</div>
 
-<div class="card-animal">
-    <img src="assets/images/animais/cachorro_thor.jpeg" alt="">
-    <div class="animais-informacoes">
-        <p class="nome">Thor</p>
-        <p class="descricao">Cachorro energético e leal, ama brincadeiras.</p>
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/cachorro_thor.jpeg" alt=""> 
+            <div class="animais-informacoes">
+                <p class="nome">Thor</p>
+                <p class="descricao">Cachorro energético e leal, ama brincadeiras.</p>
+            </div>
+        </a>  
     </div>
-</div>
 
-<div class="card-animal">
-    <img src="assets/images/animais/gata_mika.jpg" alt="">
-    <div class="animais-informacoes">
-        <p class="nome">Mika</p>
-        <p class="descricao">Gata dócil e observadora, sempre em busca de carinho.</p>
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/gata_mika.jpg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Mika</p>
+                <p class="descricao">Gata dócil e observadora, sempre em busca de carinho.</p>
+            </div>
+        </a>
     </div>
-</div>
 
-<div class="card-animal">
-  <img src="assets/images/animais/frederico.jpeg" alt="">
-  <div class="animais-informacoes">
-      <p class="nome">Frederico</p>
-      <p class="descricao">Cão pequeno e brincalhão, ama correr ao ar livre.</p>
-  </div>
-</div>
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/frederico.jpeg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Frederico</p>
+                <p class="descricao">Cão pequeno e brincalhão, ama correr ao ar livre.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/pipoca.jpg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Pipoca</p>
+                <p class="descricao">Pássaro alegre que canta todas as manhãs.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/gata_nina.jpg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Nina</p>
+                <p class="descricao">Gatinha brincalhona que ama perseguir bolinhas.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/bolt.jpg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Bolt</p>
+                <p class="descricao">Cachorro veloz e esperto, cheio de energia.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/tico.jpg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Tico</p>
+                <p class="descricao">Pássaro sociável que adora interagir com humanos.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/gata_preta.jpeg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Luna</p>
+                <p class="descricao">Gata carinhosa e curiosa, adora cochilar ao sol.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/cachorro_thor.jpeg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Thor</p>
+                <p class="descricao">Cachorro energético e leal, ama brincadeiras.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/gata_mika.jpg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Mika</p>
+                <p class="descricao">Gata dócil e observadora, sempre em busca de carinho.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-animal">
+        <a href="animal.html">
+            <img src="assets/images/animais/frederico.jpeg" alt="">
+            <div class="animais-informacoes">
+                <p class="nome">Frederico</p>
+                <p class="descricao">Cão pequeno e brincalhão, ama correr ao ar livre.</p>
+            </div>
+        </a>
+    </div>
 </main>
 
 <div class="trocar-pagina">
@@ -191,13 +218,35 @@
     <button class="botao-proxima-pagina">próxima</button>
 </div>
 
+<footer class="footer">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="assets/images/logos/pata.png" width="29.27" height="24" class="d-inline-block align-top" alt="">
+            <div class="footer-brand">Pet Shop</div>
+            <p class="footer-text">Somos uma ONG de adoção de animais, <br>nossa missão é espalhar o bem e tornar o <br> mundo um lugar melhor.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
 
+        <div class="col-md-6 text-md-end">
+            <ul class="footer-links">
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Fale conosco</a></li>
+                <li><a href="#">Seja um voluntário</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
 
-
-
-
-
-
+    <div class="copyright text-center">
+        © 2024 CompanyName. All rights reserved.
+    </div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"

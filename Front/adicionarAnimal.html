@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="formulario-cadastro">
+        <h2>CADASTRO ANIMAL</h2>
+        <form id="fomularioCadastro">
+            <label for="Nome">Nome</label>
+            <input class="campo-nome" type="text" id="nome" name="nome" placeholder="Nome"><br>
+
+            <label for="Especie">Especie</label><br>
+            <select id="Especie" name="Especie">
+                <option value="">Selecione uma especie</option>
+                <option value="passaro">Pássaro</option>
+                <option value="gato">Gato</option>
+                <option value="cachorro">Cachorro</option>
+            </select><br>
+
+            <label for="Sexo">Sexo</label><br>
+            <select id="Sexo" name="Sexo">
+                <option value="">Selecione uma opção</option>
+                <option value="M">Macho</option>
+                <option value="F">Fêmea</option>
+            </select><br>
+
+            <label for="Porte">Porte</label><br>
+            <select id="Porte" name="Porte">
+                <option value="">Selecione uma opção</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+            </select><br>
+
+            <label for="Idade">Idade</label><br>
+            <select id="Idade" name="Idade">
+                <option value="">Selecione uma opção</option>
+                <option value="Filhote">Filhote</option>
+                <option value="Jovem">Jovem</option>
+                <option value="Adulto">Adulto</option>
+               <option value="Idoso">Idoso</option>
+            </select><br>
+
+            <label for="Raca">Raça</label><br>
+            <input type="text" id="Raca" name="Raca" placeholder="SRD (sem raça definida)"><br>
+
+            <label for="Castrado">Castrado</label><br>
+            <select id="Castrado" name="Castrado">
+                <option value="">Selecione uma opção</option>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select><br>
+
+            <label for="descricao-formulario">Descrição</label><br>
+            <textarea placeholder="lindo filhotinho sem raça definida, com cerca de ⅔ meses, porte médio. Está desverminado, recebeu a primeira dose de vacina importada e foi castrado. É super veloz e cheio de energia." style="height: 100px;"></textarea><br>
+            
+            <label for="upload-Foto">Selecione ou arraste uma foto do animal:</label><br>
+            <input type="file" id="uploadFoto" name="fotoAnimal" accept=".png, .jpg, .jpeg" multiple><br>
+        </form>
+            <a href="index.html" style="text-decoration: none;"><button class="botao-entrar">Cadastrar animal</button></a>
+    </div>
+</body>
+</html>
