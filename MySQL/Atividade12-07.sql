@@ -139,9 +139,113 @@ insert into Funcionario (ID_Funcionario, Matricula) values
 (19, 'FUNC-2025-009'),
 (20, 'FUNC-2025-010');
 
-INSERT INTO Adocao (ID_Animal, ID_Adotante, Data_Adocao) VALUES
+insert into Adocao (ID_Animal, ID_Adotante, Data_Adocao) values
 (1, 1, '2023-03-01'),
 (2, 2, '2023-03-05'),
 (4, 4, '2023-04-15'),
 (6, 5, '2023-05-20'),
 (8, 8, '2023-06-10');
+
+-- Liste os nomes dos animais adotados, junto com o nome do adotante.
+
+select a.Nome Animal, p.Nome Adotante
+from Animal a
+join Adocao ad on a.ID_Animal = ad.ID_Animal
+join Adotante adot on ad.ID_Adotante = adot.ID_Adotante
+join Pessoa p on p.ID_Pessoa = adot.ID_Adotante;
+
+-- Mostre os nomes dos gatos que ainda não foram adotados.
+
+select a.nome
+from gato g
+join animal a on g.id_gato = a.id_animal
+where a.adotado = false;
+
+-- Quantos animais há de cada raça?
+
+select raca, count(*) as quantidade
+from animal
+group by raca
+order by quantidade desc;
+
+-- Mostre os nomes dos adotantes que moram em "rua brasil" ou "rua goiás".
+
+select p.nome
+from pessoa p
+join adotante a on p.id_pessoa = a.id_adotante
+where p.logradouro in ('rua brasil', 'rua goiás');
+
+-- Mostre os 5 animais mais velhos cadastrados.
+
+select nome, data_nas
+from animal
+order by data_nas
+limit 5;
+
+-- Liste todos os pássaros que não podem voar.
+
+select a.nome
+from passaro p
+join animal a on a.id_animal = p.id_passaro
+where p.pode_voar = false;
+
+-- Mostre os funcionários cujo e-mail contém "example.com".
+
+select p.nome, p.email
+from pessoa p
+join funcionario f on p.id_pessoa = f.id_funcionario
+where p.email like '%example.com%';
+
+-- Quantos cachorros são treinados e quantos não são?
+
+select c.e_treinado as treinado, count(*) as quantidade
+from cachorro c
+group by c.e_treinado;
+
+-- Mostre os nomes dos animais com descrição contendo "brinca" ou "divertido".
+
+select nome, descricao
+from animal
+where descricao like '%brinca%' or descricao like '%divertido%';
+
+-- Quantas adoções foram feitas em cada mês?
+
+select month(data_adocao) as mes, count(*) as total_adocoes
+from adocao
+group by month(data_adocao)
+order by mes;
+
+-- Liste os nomes dos animais com raça que começa com a letra "b".
+
+select nome, raca
+from animal
+where raca like 'b%';
+
+-- Qual é a menor e maior data de nascimento dos animais?
+
+select min(data_nas) as mais_velho, max(data_nas) as mais_novo
+from animal;
+
+-- Quantos animais foram adotados por cada pessoa (mostrar nome do adotante)?
+
+select p.nome, count(ad.id_adocao) as total_adotados
+from adocao ad
+join adotante adot on ad.id_adotante = adot.id_adotante
+join pessoa p on adot.id_adotante = p.id_pessoa
+group by p.nome
+order by total_adotados desc;
+
+-- Mostre os nomes dos animais com o mesmo ano de nascimento que o adotante.
+
+select ani.nome as animal, ani.data_nas as nasc_animal, p.nome as adotante, p.date_nas as nasc_adotante
+from adocao ad
+join animal ani on ad.id_animal = ani.id_animal
+join adotante a on ad.id_adotante = a.id_adotante
+join pessoa p on a.id_adotante = p.id_pessoa
+where year(ani.data_nas) = year(p.date_nas);
+
+-- Mostre os nomes e raças dos animais que já foram adotados e possuem na descrição a palavra "carinhoso"
+
+select nome, raca, descricao
+from animal
+where adotado = true and descricao like '%carinhoso%';
