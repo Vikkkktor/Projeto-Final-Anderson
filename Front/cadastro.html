@@ -24,36 +24,36 @@
                 <label for="Sobrenome">Sobrenome</label> 
             </div>
             <div class="input-nome-e-sobrenome">
-                <input class="campo-nome" type="text" id="nome" name="nome" placeholder="Nome">
-                <input class="campo-sobrenome" type="text" id="sobrenome" name="Sobrenome" placeholder="Sobrenome">
+                <input class="campo-nome" type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input class="campo-sobrenome" type="text" id="sobrenome" name="Sobrenome" placeholder="Sobrenome" required>
             </div><br>
 
             <label for="CPF">CPF</label><br>
-            <input type="text" id="CPF" name="CPF" placeholder="12345678910"><br>
+            <input type="text" id="CPF" name="CPF" placeholder="12345678910" required><br>
 
-            <label for="Email">Email</label><br>
-            <input type="email" id="emailCadastro" name="Email" placeholder="Email"><br>
+            <label for="emailCadastro">Email</label><br>
+            <input type="email" id="emailCadastro" name="Email" placeholder="Email" required><br>
 
-            <label for="EmailConfirmado">Confirme seu email</label><br>
-            <input type="email" id="emailConfirmadoCadastro" name="EmailConfirmado" placeholder="Email"><br>
+            <label for="emailConfirmadoCadastro">Confirme seu email</label><br>
+            <input type="email" id="emailConfirmadoCadastro" name="EmailConfirmado" placeholder="Email" required><br>
 
-            <label for="Senha">Senha</label><br>
-            <input type="password" id="senhaCadastro" name="Senha" placeholder="Senha"><br>
+            <label for="senhaCadastro">Senha</label><br>
+            <input type="password" id="senhaCadastro" name="Senha" placeholder="Senha" required><br>
 
-            <label for="SenhaConfirmada">Confirme sua senha</label><br>
-            <input type="password" id="senhaConfirmadaCadastro" name="Senha" placeholder="Senha"><br>
+            <label for="senhaConfirmadaCadastro">Confirme sua senha</label><br>
+            <input type="password" id="senhaConfirmadaCadastro" name="Senha" placeholder="Senha" required><br>
 
             <label for="DataNascimento">Data de Nascimento</label><br>
-            <input type="date" id="dataNascimento" name="DataNascimento"><br>
+            <input type="date" id="dataNascimento" name="DataNascimento" required><br>
 
             <label for="Telefone">Telefone</label><br>
-            <input type="tel" id="telefone" name="telefone" placeholder="(43)912341234"><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(43)912341234" required><br>
 
             <label for="CEP">CEP</label><br>
-            <input type="text" id="CEP" name="CEP" placeholder="86706328"><br>
+            <input type="text" id="CEP" name="CEP" placeholder="86706328" required><br>
 
             <label for="SelecionarEstado">Estado</label><br>
-            <select id="selecionarEstado" name="SelecionarEstado">
+            <select id="selecionarEstado" name="SelecionarEstado" required>
                 <option value="">selecione um estado</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -85,13 +85,13 @@
             </select><br>
 
             <label for="Cidade">Cidade</label><br>
-            <input type="text" id="cidade" name="cidade" placeholder="cidade"><br>
+            <input type="text" id="cidade" name="cidade" placeholder="cidade" required><br>
             
             <label for="Logradouro">Logradouro</label><br>
-            <input type="text" id="logradouro" name="logradouro" placeholder="Rua Cassio Ramos"><br>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Rua Cassio Ramos" required><br>
 
             <label for="Complemento">Complemento</label><br>
-            <input type="text" id="complemento" name="complemento" placeholder="ap 806"><br>
+            <input type="text" id="complemento" name="complemento" placeholder="ap 806" required><br>
         </form>
             <button type="button" class="botao-entrar" id="botaoCadastrar">Cadastrar</button>
             <p class="texto-criar-conta">Já tem uma conta?&nbsp;<a href="login.html">Entrar</a></p>
