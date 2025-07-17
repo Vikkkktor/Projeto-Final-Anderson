@@ -164,10 +164,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const botaoCadastroAnimal = document.getElementById('botaoCadastrarAnimal');
     const botaoLogin = document.getElementById('botaoLogar');
 
-    const loginForm = document.getElementById('fomularioLogin'); 
-    const cadastroUsuarioForm = document.getElementById('fomularioCadastro'); 
-    const cadastroAnimalForm = document.getElementById('fomularioCadastroAnimal'); 
-
     if (botaoCadastroUser) {
         botaoCadastroUser.addEventListener('click', function(event){
             handleCadastroUsuario(event);
