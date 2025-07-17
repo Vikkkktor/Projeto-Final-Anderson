@@ -11,7 +11,7 @@ create table Animal (
     sexo char(1),
     porte enum ('Pequeno', 'Médio', 'Grande'),
     especie enum ('Passaro', 'Cachorro', 'Gato'),
-    castrado boolean default false,
+    castrado boolean not null default false,
     Raca varchar(30) not null
 );
     
